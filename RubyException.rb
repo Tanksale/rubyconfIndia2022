@@ -1,22 +1,20 @@
 require 'English'
 
-puts $!.inspect
-#Output
-=> nil
-
 begin
+  puts $!.inspect
   raise "Oops"
 rescue
   puts $!.inspect
   puts $ERROR_INFO.inspect
 end
-#Output
-=> #<RuntimeError: Oops>
-=> #<RuntimeError: Oops>
-
 puts $!.inspect
+
 #Output
 => nil
+=> #<RuntimeError: Oops>
+=> #<RuntimeError: Oops>
+=> nil
+
 
 ##########
 
