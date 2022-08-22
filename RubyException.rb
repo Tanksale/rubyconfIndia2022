@@ -1,3 +1,17 @@
+response_code = might_return_nil()
+message = codes_to_messages[response_code]
+response = "System Status: " + message
+# What do you mean "Can’t convert nil into string"?!
+
+
+response_code = might_return_nil() or raise "No response code"
+# ...
+# ...
+
+
+
+
+
 begin
   try_something
 rescue
