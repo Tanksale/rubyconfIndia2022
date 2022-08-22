@@ -1,3 +1,20 @@
+begin
+  # ...
+rescue Exception
+end
+
+
+begin
+  # ...
+rescue => error
+  raise unless error.message =~ /foo bar/
+end
+
+
+
+
+
+
 require 'English'
 
 puts $!.inspect
