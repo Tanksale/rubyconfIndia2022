@@ -1,3 +1,10 @@
+  {}.fetch(:nosuch) {|key| "No key #{key}"} # => "No key nosuch"
+
+
+
+
+
+
 # with sideband data strategy noting the failures
 def some_15_minutes_operation 
   array_new = Array.new
