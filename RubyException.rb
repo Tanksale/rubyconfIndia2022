@@ -1,3 +1,14 @@
+  # with sideband data strategy noting the failures
+  def some_15_minutes_operation 
+     array_new = Array.new
+     hash_new = Hash.new
+     return array_new, hash_new
+  end
+      
+  result, status = some_15_minutes_operation
+
+
+
 response_code = might_return_nil()
 message = codes_to_messages[response_code]
 response = "System Status: " + message
