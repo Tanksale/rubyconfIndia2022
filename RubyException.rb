@@ -1,3 +1,15 @@
+user_name = User.find_by(id: 1).name
+unless user_name
+  logger.error "Someone forgot to run db:populate!"
+  user_name = "There"
+end
+
+puts "Hi #{user_name}"
+
+
+
+
+
 {}.fetch(:nosuch) {|key| "No key #{key}"} # => "No key nosuch"
 
 
