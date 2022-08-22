@@ -1,4 +1,4 @@
-  {}.fetch(:nosuch) {|key| "No key #{key}"} # => "No key nosuch"
+{}.fetch(:nosuch) {|key| "No key #{key}"} # => "No key nosuch"
 
 
 
