@@ -1,4 +1,22 @@
 begin
+  try_something
+rescue
+  begin
+    try_something_else
+  rescue
+    # handle failure
+  end 
+end
+
+# every method in ruby is implicitly a begin block
+def foo
+  # Business logic goes here
+rescue # -------------------
+  # failure handling goes here
+end
+
+
+begin
   # ...
 rescue Exception
 end
