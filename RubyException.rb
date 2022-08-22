@@ -1,11 +1,11 @@
-  # with sideband data strategy noting the failures
-  def some_15_minutes_operation 
-     array_new = Array.new
-     hash_new = Hash.new
-     return array_new, hash_new
-  end
-      
-  result, status = some_15_minutes_operation
+# with sideband data strategy noting the failures
+def some_15_minutes_operation 
+  array_new = Array.new
+  hash_new = Hash.new
+  return array_new, hash_new
+end
+
+result, status = some_15_minutes_operation
 
 
 
